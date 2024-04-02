@@ -1,0 +1,41 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="styles.css"/>
+    <title>fitfunflo~</title>
+    <script>
+      function load() {
+/*
+ * Capitalized letters. Not Used.
+       var fitfunflo = `
+FFFFFFF IIIIIII TTTTTTT FFFFFFF UU   UU NN   NN FFFFFFF LL        OOO
+FF        III     TTT   FF      UU   UU NN   NN FF      LL       OO OO
+FF        III     TTT   FF      UU   UU NNN  NN FF      LL      OO   OO
+FFFFF     III     TTT   FFFFF   UU   UU NN N NN FFFFF   LL      OO   OO
+FF        III     TTT   FF      UU   UU NN  NNN FF      LL      OO   OO
+FF        III     TTT   FF      UU   UU NN   NN FF      LL       OO OO
+FF      IIIIIII   TTT   FF       UUUUU  NN   NN FF      LLLLLLL   OOO
+`;
+*/
+       var fitfunflo = `
+  fff   iii     tt      fff                       fff   lll
+  ff    iii     tt      ff                        ff     ll                 ~~~
+  ff          tttttt    ff    uu   uu  nn   nn    ff     ll     oooo      ~~~~~~~
+ffffff  iii     tt    ffffff  uu   uu  nnn  nn  ffffff   ll   oo    oo  ~~~     ~~~     ~~~
+  ff     ii     tt      ff    uu   uu  nn n nn    ff     ll   oo    oo            ~~~~~~~
+  ff     ii     tt      ff    uu   uu  nn  nnn    ff     ll   oo    oo              ~~~
+  ff    iiii    ttt     ff     uuuuu   nn   nn    ff     lll    oooo
+`;
+       // Replace space and newline with their HTML counterparts.
+       fitfunflo = fitfunflo.replace(/ /g, '&nbsp;').replace(/\n/g, '<br>');
+       var e = document.getElementById('fitfunflo');
+       e.innerHTML = fitfunflo;
+     }
+    </script>
+  </head>
+  <body style="margin:0;">
+    <div id="main">
+      <div id="fitfunflo"></div>
+    </div>
+    <script>window.onload = load;</script>
+  </body>
+</html>
